@@ -2,7 +2,8 @@
 // import './App.css';
 // import Team from './Card/Team';
 
-import Feat from "./Card/Feat";
+import Auto from "./Card/Auto";
+// import Feat from "./Card/Feat";
 
 // import Blog from "./Card/Blog";
 // import Client from './Card/Client';
@@ -13,7 +14,8 @@ function App() {
       {/* <Team />
       <Blog /> */}
       {/* <Client /> */}
-      <Feat />
+      {/* <Feat /> */}
+      <Auto />
     </div>
   );
 }
