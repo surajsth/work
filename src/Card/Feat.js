@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper";
+import { Navigation } from "swiper";
 
 import './Blog.css'
 function Feat() {
@@ -17,15 +17,11 @@ function Feat() {
             <button className="btn2 m-5" type="button" >Recent</button>
             <div className="cont">
                 <Swiper
+                    navigation={true}
+                    modules={[Navigation]}
                     onSwiper={setSwiperRef}
                     slidesPerView={3}
-                    centeredSlides={true}
                     spaceBetween={30}
-                    pagination={{
-                        type: "fraction",
-                    }}
-                    navigation={true}
-                    modules={[Pagination, Navigation]}
                     className="mySwiper"
                 >
                     <SwiperSlide>

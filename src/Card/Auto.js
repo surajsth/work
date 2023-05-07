@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay } from "swiper";
 
 import './Blog.css'
 import logo from '../Images/logo.png'
@@ -13,44 +13,40 @@ function Auto() {
             <h5>Partners</h5>
             <h1>We work with our best Partners.</h1>
             <Swiper
-                spaceBetween={30}
-                centeredSlides={true}
+                spaceBetween={10}
                 slidesPerView={4}
                 autoplay={{
                     delay: 2500,
                     disableOnInteraction: false,
                 }}
-                pagination={{
-                    clickable: true,
-                }}
-                navigation={true}
-                modules={[Autoplay, Pagination, Navigation]}
+
+                modules={[Autoplay]}
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <img src={logo} className='Image align-items-center' alt="" />
-                    <p className='patner text-center'>Patner name</p>
+                    <img src={logo} className='Image' alt="" />
+                    <p className='patner'>Patner name</p>
 
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={logo} className='Image align-items-center' alt="" />
+                    <img src={logo} className='Image' alt="" />
                     <p className='patner text-center'>Patner name</p>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={logo} className='Image align-items-center' alt="" />
+                    <img src={logo} className='Image' alt="" />
                     <p className='patner text-center'>Patner name</p>
                 </SwiperSlide>
-                <SwiperSlide><img src={logo} className='Image align-items-center' alt="" />
+                <SwiperSlide><img src={logo} className='Image' alt="" />
                     <p className='patner text-center'>Patner name</p></SwiperSlide>
-                <SwiperSlide><img src={logo} className='Image align-items-center' alt="" />
+                <SwiperSlide><img src={logo} className='Image' alt="" />
                     <p className='patner text-center'>Patner name</p></SwiperSlide>
-                <SwiperSlide><img src={logo} className='Image align-items-center' alt="" />
+                <SwiperSlide><img src={logo} className='Image' alt="" />
                     <p className='patner text-center'>Patner name</p></SwiperSlide>
-                <SwiperSlide><img src={logo} className='Image align-items-center' alt="" />
+                <SwiperSlide><img src={logo} className='Image' alt="" />
                     <p className='patner text-center'>Patner name</p></SwiperSlide>
-                <SwiperSlide><img src={logo} className='Image align-items-center' alt="" />
+                <SwiperSlide><img src={logo} className='Image' alt="" />
                     <p className='patner text-center'>Patner name</p></SwiperSlide>
-                <SwiperSlide><img src={logo} className='Image align-items-center' alt="" />
+                <SwiperSlide><img src={logo} className='Image' alt="" />
                     <p className='patner text-center'>Patner name</p></SwiperSlide>
             </Swiper>
         </div>

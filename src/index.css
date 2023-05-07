@@ -16,7 +16,7 @@ code {
 :root {
   --primary: #760c5e;
   --secondary: #1a9f00;
-  --light: rgba(118, 12, 94, 0.16);
+  --light: #e9d8e5;
   --border: #cfd0d2;
   --transition: all 0.3s ease;
 }
